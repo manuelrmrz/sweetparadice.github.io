@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+/*imagen de fondo*/
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+ z-index: -10000;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -1000;
+}
+/*---------------------*/
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body a {
+	font: 15px'Yantramanav', sans-serif;
+	font-size: 200%;
+	background-attachment: fixed;
+	margin: 0;
+}
+.intro {
+	height:100%;
+	width:100vw;
+	margin:auto;
+	background:url(imagenes/galletas.jpg) no-repeat 50% 50%;
+	display:table;
+	top:-100px;
+	background-size:cover;
+}
+/*menu*/
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background:#FFFFFA;
+}
+
+header {
+	width:100%;
+}
+body a {
+	font: 15px'Yantramanav', sans-serif;
+	font-size: 200%;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+header nav {
+	width:100%;
+	max-width:100vw;
+	margin: auto;
+}
+
+.menu_bar {
+	display:none;
+}
+
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+
+header nav ul li {
+	float:left;
+}
+
+header nav ul li a {
+	color:white;
+	display:block;
+	padding: 0 1.5em;
+	text-decoration:none;
+	transition: .4s;
+}
+
+header nav ul li span {
+	margin-right:10px;
+}
+
+header nav ul li a:hover {
+	background: rgba(255, 214, 228, 0.7);
+}
+
+section {
+	padding:20px;
+}
+
+/*Galeria*/
+
+ul,ol{
+	list-style: none;
+}
+
+body{
+	font-family: Open sans;
+}
+
+.slideshow{
+	width: 100%;
+	position: relative;
+}
+
+.slider li, ul{
+	width: 100%;
+}
+
+.slider li{
+	overflow: hidden;
+}
+
+.slider li img{
+	margin-top: 40px;
+	width: 100%;
+}
+
+.slider .caption{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 15px 50px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+div#marco {
+	margin-top: 30px;
+	background: rgba(245,246,247,0.5);
+}
+.slider .caption h1{
+	font: 15px'Yantramanav', sans-serif;
+	font-size: 30px;
+	text-shadow: 1px 1px 0px grey;
+}
+
+.slider .caption p{
+	font: 15px'Yantramanav', sans-serif;
+	margin-top: 10px;
+	font-size: 20px;
+	text-shadow: 0.5px 0.5px 0px grey;
+}
+
+.pagination{
+	position: absolute;
+	top: 102%;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+
+.pagination li{
+	font-size: 20px;
+	margin: 2px 5px;
+	color: #858585;
+	cursor: pointer;
+}
+
+.left, .right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+
+@media screen and (max-width:800px ) {
+	header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(152, 48, 65, 0.7);
+		background-color: white;
+		z-index: -1000;
+	}
+
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#983041;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+
+	}
+
+	.fly-in-text {
+		list-style: none;
+		position: absolute;
+		left: 15%;
+		top: 15%;
+		margin-right: 20px;
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	.fly-in-text li {
+		padding-top: 0px;
+		border: 1px;
+		display: inline-block;
+		padding: 1px;
+		margin-top: 90%;
+		font-family: 'Yantramanav', sans-serif;
+		font-weight: 150;
+		font-size: 500%;
+		color: #fff;
+background-color: white;
+		opacity: 1;
+		transition: all 2.5s ease;
+		text-shadow: 0.5px 0.5px 0px grey;
+		z-index: 10000;
+	}
+}
+
+
